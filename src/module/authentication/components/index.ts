@@ -1,0 +1,1 @@
+export { default as AuthenticationHeader } from './authentication-header/authentication'
