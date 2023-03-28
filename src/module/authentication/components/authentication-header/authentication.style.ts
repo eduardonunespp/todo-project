@@ -5,12 +5,15 @@ export const medias = {
 };
 
 export const Container = styled.header`
+  width: 100%;
   height: 78px;
   background-color: var(--secundary);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0px 32px;
+  position: absolute;
+  top: 0px;
 
   a {
     text-decoration: none;

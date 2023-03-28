@@ -1,6 +1,8 @@
 import React from 'react'
 import * as S from './authentication.style'
 import todoLogo from '../../../../assets/todo.logo'
+import TodoLogoSvg from '../../../../assets/todo.logo'
+import { Link } from 'react-router-dom'
 
 
 export const AuthenticationHeader: React.FC = () => {
@@ -9,10 +11,8 @@ export const AuthenticationHeader: React.FC = () => {
 
     //@ts-ignore
     <S.Container>
-      {/* @ts-ignore */}
-      <img src={todoLogo} alt="" />
-
-      <a href="">Criar conta</a>
+      <TodoLogoSvg/>
+      <a href="">Não tem uma conta?</a>
     </S.Container>
 
   )
