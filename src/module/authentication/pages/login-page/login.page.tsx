@@ -1,6 +1,6 @@
-import * as S from './login-page.styles'
-import React from 'react'
-import { AuthenticationHeader, InputAuth, ButtonAuth  } from '../../components'
+import * as S from "./login-page.styles";
+import React from "react";
+import { AuthenticationHeader, InputAuth, ButtonAuth } from "../../components";
 
 const RegisterPage: React.FC = () => {
   return (
@@ -8,18 +8,15 @@ const RegisterPage: React.FC = () => {
       <AuthenticationHeader />
 
       <S.FormContainer>
-
         <h2>Autenticação</h2>
 
-        <InputAuth label='Email' type='text' id='' />
-        <InputAuth label='Senha' type='password' id=''/>
+        <InputAuth label="Email" type="text" id="" placeholder="Email" />
+        <InputAuth label="Senha" type="password" id="" placeholder="Senha" />
 
-        <ButtonAuth />   
-
+        <ButtonAuth>Salvar</ButtonAuth>
       </S.FormContainer>
-
     </S.Container>
-  )
-}
+  );
+};
 
-export default RegisterPage
+export default RegisterPage;

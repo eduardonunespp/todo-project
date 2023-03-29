@@ -4,6 +4,7 @@ export const medias = {
   mobile: "(max-width: 600px)",
 };
 
+
 export const ButtonAuth = styled.button`
 
         width: 100%;
@@ -11,22 +12,23 @@ export const ButtonAuth = styled.button`
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding: 9px 132px;
-        gap: 10px;
-        height: 42px;
+        padding: .5625rem 8.25rem;
+        gap: .625rem;
+        height: 2.625rem;
         background: rgba(39, 196, 152, 0.5);
         border: none;
-        border-radius: 4px;
+        border-radius: .25rem;
         font-family: var(--font-primary);
-        margin-top: 24px;
+        font-size: 1rem;
+        margin-top: 1.5rem;
         font-weight: bold;
-        color: var(--text-secundary);
+        color: ${(props) => props.theme.colors.secondary};
         text-decoration: none;
         cursor: pointer;
         filter: brightness(0.8);
 
         @media ${medias.mobile} {
-            padding: 9px 50px;
+            padding: .5625rem 3.125rem;
         }
 
 `;

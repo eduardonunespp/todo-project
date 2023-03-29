@@ -1,12 +1,20 @@
 import React from 'react'
-
+import { GlobalStyle } from './shared/styles'
+import { RegisterPage } from './module'
+import { ThemeProvider } from 'styled-components'
+import { theme } from './shared/styles'
 
 const App: React.FC =() => {
 
   return (
-    <div className="App">
-     <h2>teste</h2>
-    </div>
+    <>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <RegisterPage />  
+    </ThemeProvider>
+  
+    </>
+
   )
 }
 

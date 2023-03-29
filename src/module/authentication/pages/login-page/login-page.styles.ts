@@ -4,7 +4,7 @@ export const Container = styled.main`
   width: 100%;
   height: 100vh;
   overflow-y: auto;
-  background-color: var(--primary);
+  background-color: ${(props) => props.theme.colors.secondary};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,7 @@ export const FormContainer = styled.div`
 
   h2 {
     font-family: var(--font-primary);
-    font-size: 1.3rem;
+    font-size: 1.375rem;
     color: var(--text-secundary);
 
     border-left: 7px solid var(--brand);

@@ -1,14 +1,11 @@
-import React from 'react'
-import * as S from './authentication-button.style'
+import React, { ForwardedRef } from "react";
+import * as S from "./authentication-button.style";
+import { ButtonInputType } from "../types";
+import { forwardRef } from "react";
 
-
-export const ButtonAuth: React.FC = () => {
-  return (
-    <S.ButtonAuth>
-      Salvar
-    </S.ButtonAuth>
-
-  )
-} 
-
-export default ButtonAuth
+export const ButtonAuth = forwardRef<HTMLButtonElement, ButtonInputType>(
+  ({ children, ...rest }, ref) => {
+    return <S.ButtonAuth {...rest} ref={ref} children={children} />;
+  }
+);
+export default ButtonAuth;

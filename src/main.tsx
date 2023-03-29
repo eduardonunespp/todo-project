@@ -7,7 +7,6 @@ import { RegisterPage } from './module'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <GlobalStyle />
-    <RegisterPage />
+    <App/>
   </React.StrictMode>
 )
