@@ -18,11 +18,11 @@ export const ButtonAuth = styled.button`
         background: rgba(39, 196, 152, 0.5);
         border: none;
         border-radius: .25rem;
-        font-family: var(--font-primary);
+        font-family: ${(props) => props.theme.font.family};
         font-size: 1rem;
         margin-top: 1.5rem;
         font-weight: bold;
-        color: ${(props) => props.theme.colors.secondary};
+        color: ${(props) => props.theme.colors.textSecondary};
         text-decoration: none;
         cursor: pointer;
         filter: brightness(0.8);

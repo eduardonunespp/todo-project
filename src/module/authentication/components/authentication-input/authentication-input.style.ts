@@ -10,7 +10,7 @@ export const InputAuth = styled.div`
   margin-bottom: 0.75rem;
 
   label {
-    color: var(--text-secundary);
+    color: ${(props) => props.theme.colors.textSecondary};
     font-size: 1rem;
     display: block;
 
@@ -28,7 +28,7 @@ export const InputAuth = styled.div`
     margin-top: 0.188rem;
     padding: 0px 10px;
     border: 1px solid #6c757d;
-    background-color: var(--primary);
+    background-color: ${(props) => props.theme.colors.primary};
     color: var(--text-secundary);
     border-radius: 0.25rem;
 

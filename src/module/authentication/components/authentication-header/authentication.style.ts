@@ -7,7 +7,7 @@ export const medias = {
 export const Container = styled.header`
   width: 100%;
   height: 78px;
-  background-color: var(--secundary);
+  background-color: ${(props) => props.theme.colors.secondary};
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -17,7 +17,7 @@ export const Container = styled.header`
 
   a {
     text-decoration: none;
-    color: var(--brand);
+    color: ${(props) => props.theme.colors.brand};
     font-size: 0.8rem;
 
     &:hover {
