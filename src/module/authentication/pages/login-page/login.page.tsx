@@ -2,12 +2,13 @@ import * as S from "./login-page.styles";
 import React from "react";
 import { AuthenticationHeader, InputAuth, ButtonAuth } from "../../components";
 
-const RegisterPage: React.FC = () => {
+const SignIn: React.FC = () => {
   return (
     <S.Container>
-      <AuthenticationHeader />
+      <AuthenticationHeader route="/cadastro" count="Não possui uma conta?" />
 
       <S.FormContainer>
+
         <h2>Autenticação</h2>
 
         <InputAuth label="Email" type="text" id="" placeholder="Email" />
@@ -19,4 +20,4 @@ const RegisterPage: React.FC = () => {
   );
 };
 
-export default RegisterPage;
+export default SignIn;

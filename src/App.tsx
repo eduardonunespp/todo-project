@@ -1,8 +1,8 @@
 import React from 'react'
 import { GlobalStyle } from './shared/styles'
-import { RegisterPage } from './module'
 import { ThemeProvider } from 'styled-components'
 import { theme } from './shared/styles'
+import { RouterApp } from './routes/routes'
 
 const App: React.FC =() => {
 
@@ -10,7 +10,7 @@ const App: React.FC =() => {
     <>
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <RegisterPage />  
+      <RouterApp />  
     </ThemeProvider>
   
     </>
