@@ -8,3 +8,8 @@ export type AuthInputType = {
 export type ButtonInputType = {
   
 } & React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>
+
+export type HeaderAuthType = {
+  count: string,
+  route: string,
+}
