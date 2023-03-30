@@ -16,8 +16,8 @@ export const InputAuth = styled.div`
 
     ::after {
       content: '*';
-      color: red;
-      margin: 2px;
+      color: ${(props) => props.theme.colors.danger};
+      margin: 3px;
     }
   }
 
@@ -29,7 +29,7 @@ export const InputAuth = styled.div`
     padding: 0px 10px;
     border: 1px solid #6c757d;
     background-color: ${(props) => props.theme.colors.primary};
-    color: var(--text-secundary);
+    color: ${(props) => props.theme.colors.textSecondary};
     border-radius: 0.25rem;
 
     &:focus {
@@ -42,7 +42,7 @@ export const InputAuth = styled.div`
     }
 
     @media ${medias.mobile} {
-      height: 40px;
+      height: 2.5rem;
     }
   }
 `;

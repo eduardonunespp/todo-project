@@ -1,6 +1,7 @@
 import { DefaultTheme } from "styled-components";
 
 export const theme: DefaultTheme = {
+  title: 'default',
   colors: {
     primary: '#25294C',
     secondary: '#202342',
@@ -14,7 +15,6 @@ export const theme: DefaultTheme = {
     warning: '#E4A11B',
     danger: '#DC4C64',
   },
-  title: 'default',
   font: {
     family: 'Poppins'
   }

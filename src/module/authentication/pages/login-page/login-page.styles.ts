@@ -20,9 +20,10 @@ export const FormContainer = styled.div`
     font-size: 1.375rem;
     color: ${(props) => props.theme.colors.textSecondary};
 
-    border-left: 7px solid ${((props) => props.theme.colors.brand)};
+    border-left: 7px solid ${(props) => props.theme.colors.brand};
     padding: 0rem .75rem;
 
     margin-bottom: 1.5rem;
   }
 `;
+
