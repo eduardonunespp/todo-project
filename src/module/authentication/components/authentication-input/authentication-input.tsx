@@ -3,7 +3,7 @@ import * as S from "./authentication-input.style";
 import { AuthInputType } from "../types";
 import { forwardRef } from "react";
 
-const AuthenticationInput = forwardRef<HTMLInputElement, AuthInputType>(
+export const InputAuth = forwardRef<HTMLInputElement, AuthInputType>(
   ({ label, id, placeholder, ...rest }, ref) => {
     return (
       <S.InputAuth>
@@ -14,4 +14,4 @@ const AuthenticationInput = forwardRef<HTMLInputElement, AuthInputType>(
   }
 );
 
-export default AuthenticationInput;
+export default InputAuth;
