@@ -4,8 +4,8 @@ import { ButtonInputType } from "../types";
 import { forwardRef } from "react";
 
 export const ButtonAuth = forwardRef<HTMLButtonElement, ButtonInputType>(
-  ({ children, ...rest }, ref) => {
-    return <S.ButtonAuth {...rest} ref={ref} children={children} />;
+  ({ children, isDisabled, ...rest }, ref) => {
+    return <S.ButtonAuth {...rest} ref={ref} children={children} isDisabled={isDisabled} />;
   }
 );
 export default ButtonAuth;

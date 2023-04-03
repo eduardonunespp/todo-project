@@ -4,8 +4,12 @@ export const medias = {
   mobile: "(max-width: 600px)",
 };
 
+export type ButtonAuthProps = {
+  isDisabled: boolean;
+}
 
-export const ButtonAuth = styled.button`
+
+export const ButtonAuth = styled.button<ButtonAuthProps>`
 
         width: 100%;
         display: flex;
@@ -15,7 +19,7 @@ export const ButtonAuth = styled.button`
         padding: .5625rem 8.25rem;
         gap: .625rem;
         height: 2.625rem;
-        background: rgba(39, 196, 152, 0.5);
+        background: ${(props) => props.theme.colors.brand};
         border: none;
         border-radius: .25rem;
         font-family: ${(props) => props.theme.font.family};
@@ -25,7 +29,10 @@ export const ButtonAuth = styled.button`
         color: ${(props) => props.theme.colors.textSecondary};
         text-decoration: none;
         cursor: pointer;
-        filter: brightness(0.8);
+
+        filter: ${(props) => props.isDisabled ? 'brightness(1)' : 'brightness(0.5)'};
+        
+        /* filter: brightness(0.8); */
 
         @media ${medias.mobile} {
             padding: .5625rem 3.125rem;

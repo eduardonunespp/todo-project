@@ -4,7 +4,12 @@ export const medias = {
   mobile: "(max-width: 600px)",
 };
 
-export const InputAuth = styled.div`
+export interface InputAuthProps
+  extends React.InputHTMLAttributes<HTMLInputElement> {
+  error: boolean;
+}
+
+export const InputAuth = styled.div<InputAuthProps>`
   display: flex;
   flex-direction: column;
   margin-bottom: 0.75rem;
@@ -15,7 +20,7 @@ export const InputAuth = styled.div`
     display: block;
 
     ::after {
-      content: '*';
+      content: "*";
       color: ${(props) => props.theme.colors.danger};
       margin: 3px;
     }
@@ -27,7 +32,12 @@ export const InputAuth = styled.div`
     border-radius: 3px;
     margin-top: 0.188rem;
     padding: 0px 10px;
-    border: 1px solid #6c757d;
+
+    border: ${(props) =>
+      props.error ? "1px solid #DC4C64" : "1px solid #6c757d"};
+
+    /* border: 1px solid #6c757d; */
+
     background-color: ${(props) => props.theme.colors.primary};
     color: ${(props) => props.theme.colors.textSecondary};
     border-radius: 0.25rem;
@@ -44,5 +54,11 @@ export const InputAuth = styled.div`
     @media ${medias.mobile} {
       height: 2.5rem;
     }
+  }
+
+  span {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: ${(props) => props.theme.colors.danger};
   }
 `;

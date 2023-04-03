@@ -3,9 +3,12 @@ export type AuthInputType = {
   id: string;
   label: string;
   placeholder: string;
+  error?: string;
 };
 
-export type ButtonInputType = {} & React.DetailedHTMLProps<
+export type ButtonInputType = {
+  isDisabled: boolean;
+} & React.DetailedHTMLProps<
   React.ButtonHTMLAttributes<HTMLButtonElement>,
   HTMLButtonElement
 >;
